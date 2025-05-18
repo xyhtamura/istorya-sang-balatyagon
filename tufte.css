@@ -51,7 +51,7 @@ body {
     padding-left: 12.5%;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
-    color: #111;
+    color: #100;
     max-width: 1400px;
     counter-reset: sidenote-counter;
 }
@@ -289,13 +289,6 @@ img {
     padding-top: 2rem;
 }
 
-#bibliography p{
-    margin-bottom: 1.5rem;
-    text-indent: -2em;
-    padding-left: 2em;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
 
 
 .bib-entry {
