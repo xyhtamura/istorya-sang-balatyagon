@@ -577,6 +577,17 @@ label.margin-toggle:not(.sidenote-number) {
         .refreshed { background-color: #80deea; }
         .medicine { background-color: #4dd0e1; }
 		
+		.woven-2 {
+            background: linear-gradient(45deg, var(--color1) 49%, var(--color2) 51%);
+        }
+        
+        .woven-3 {
+            background: linear-gradient(45deg, 
+                var(--color1) 33%, 
+                var(--color2) 33% 66%, 
+                var(--color3) 66%);
+        }
+		
 /* Leaflet Map Styles */
 #panay-map {
   width: 100%;
@@ -654,21 +665,7 @@ label.margin-toggle:not(.sidenote-number) {
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
-        /* Category colors */
-        .happy { background-color: #FFD700; color: #333; }
-        .sadness { background-color: #4169E1; color: white; }
-        .pain { background-color: #FF4500; color: white; }
-        .weakness { background-color: #9370DB; color: white; }
-        .dalaga { background-color: #FF69B4; color: white; }
-        .cloth { background-color: #32CD32; color: white; }
-        .plants { background-color: #228B22; color: white; }
-        .medicine { background-color: #8B4513; color: white; }
-        .bad-mood { background-color: #A9A9A9; color: white; }
-        .stress { background-color: #800000; color: white; }
-        .nervousness { background-color: #9932CC; color: white; }
-        .blood { background-color: #DC143C; color: white; }
-        .refreshed { background-color: #00BFFF; color: white; }
-        .napkin { background-color: #20B2AA; color: white; }
+
         
         /* Font sizes based on frequency */
         .size-1 { font-size: 12px; }
