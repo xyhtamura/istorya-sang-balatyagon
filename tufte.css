@@ -677,3 +677,23 @@ label.margin-toggle:not(.sidenote-number) {
         max-width: 120px;
     }
 }
+
+/* Subtle linked subtitle style */
+.subtitle-link {
+    font-style: italic;
+    color: inherit; /* Inherits the existing text color */
+    text-decoration: none; /* No underline */
+    transition: opacity 0.2s ease;
+    border-bottom: 1px dotted transparent; /* Optional: hidden hover effect */
+}
+
+.subtitle-link:hover {
+    opacity: 0.8;
+    border-bottom-color: rgba(0,0,0,0.3); /* Optional: faint dotted line on hover */
+}
+
+/* If you prefer no visual hover change at all: */
+.subtitle-link--stealth:hover {
+    opacity: 1;
+    border-bottom-color: transparent;
+}
