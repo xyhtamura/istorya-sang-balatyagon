@@ -283,6 +283,39 @@ img {
     hyphens: auto; /* Enable hyphenation */
 }
 
+/* Bibliography Styles */
+#bibliography {
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+#bibliography p{
+    margin-bottom: 1.5rem;
+    text-indent: -2em;
+    padding-left: 2em;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+.bib-entry {
+    margin-bottom: 1.5rem;
+    text-indent: -2em;
+    padding-left: 2em;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.bib-entry a {
+    word-break: break-word;
+}
+
+@media (max-width: 760px) {
+    .bib-entry {
+        width: 100%;
+    }
+}
+
 blockquote .sidenote,
 blockquote .marginnote {
     margin-right: -82%;
