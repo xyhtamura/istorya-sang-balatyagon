@@ -640,3 +640,40 @@ label.margin-toggle:not(.sidenote-number) {
         .size-5 { font-size: 28px; }
         .size-6 { font-size: 32px; }
         .size-7 { font-size: 36px; }
+		
+/* Logo container for organizational branding */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+}
+
+.logo-container a {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+}
+
+.logo-container a:hover {
+    opacity: 0.8;
+}
+
+.logo-container img {
+    max-height: 50px;
+    width: auto;
+    max-width: 150px;
+}
+
+@media (max-width: 760px) {
+    .logo-container {
+        gap: 1rem;
+    }
+    
+    .logo-container img {
+        max-height: 40px;
+        max-width: 120px;
+    }
+}
