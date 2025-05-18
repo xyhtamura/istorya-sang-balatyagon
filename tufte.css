@@ -271,6 +271,18 @@ img {
     top: -0.5rem;
 }
 
+/* Fix sidenote text wrapping */
+.sidenote a {
+    word-break: break-all; /* Breaks long URLs */
+    /* OR */
+    word-break: break-word; /* More natural breaks at hyphens/slashes */
+    overflow-wrap: anywhere; /* Modern alternative */
+}
+
+.sidenote {
+    hyphens: auto; /* Enable hyphenation */
+}
+
 blockquote .sidenote,
 blockquote .marginnote {
     margin-right: -82%;
