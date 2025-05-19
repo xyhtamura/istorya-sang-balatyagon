@@ -789,3 +789,19 @@ label.margin-toggle:not(.sidenote-number) {
 
 }
 
+/* Additional bar styles */
+.bar5 {
+  width: 18%;
+}
+
+.bar6 {
+  width: 22%;
+}
+
+.bar7 {
+  width: 15%;
+}
+
+.bar8 {
+  width: 25%;
+}
