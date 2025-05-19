@@ -732,3 +732,60 @@ label.margin-toggle:not(.sidenote-number) {
     opacity: 1;
     border-bottom-color: transparent;
 }
+
+/* Color Bars Styles */
+.color-bars {
+  display: flex;
+  gap: 8px;
+  margin: 3rem 0;
+  padding: 0 5%;
+  height: 14px;
+  align-items: center;
+}
+
+.color-bars .bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.color-bars .bar:hover {
+  transform: scaleY(2.5);
+}
+
+/* Individual bar colors and widths */
+.bar1 {
+
+  width: 25%;
+}
+
+.bar2 {
+  width: 20%;
+}
+
+.bar3 {
+  width: 30%;
+}
+
+.bar4 {
+  width: 15%;
+}
+
+@media (max-width: 760px) {
+  .color-bars {
+    height: 14px;
+    gap: 6px;
+    margin: 2rem 0;
+  }
+  
+  .color-bars .bar {
+    min-width: 15%;
+  }
+}
+
+/* Gradient bar style */
+.gradient-bar {
+  background: linear-gradient(30deg, #fff176 49%, #64b5f6 51%);
+
+}
+
