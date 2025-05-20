@@ -805,3 +805,66 @@ label.margin-toggle:not(.sidenote-number) {
 .bar8 {
   width: 25%;
 }
+
+/* Pasador Weaver Animation */
+.pasador-weaver {
+  width: 100%;
+  max-width: 800px; /* Keep your existing max-width */
+  background-image: linear-gradient(to bottom, #fce4ec, #f8bbd0, #f48fb1);
+  border-radius: 8px;
+  border: 1px solid #e0a8c0;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto; /* This centers the element itself when it's less than 100% width */
+}
+
+.weaver-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px; /* Increased gap for better spacing */
+  width: calc(100% - 20px); /* Account for padding */
+  height: calc(100% - 20px); /* Account for padding */
+  position: relative;
+  margin: 0 auto; /* Center the grid */
+}
+
+.weaver-square {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: weaveIn 0.5s ease-out forwards;
+  border-radius: 4px; /* Slightly larger radius */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Slightly stronger shadow */
+  position: relative;
+  z-index: 1;
+}
+@keyframes weaveIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Woven square styles */
+.woven-2 {
+  background: linear-gradient(45deg, var(--color1) 49%, var(--color2) 51%);
+}
+
+.woven-3 {
+  background: linear-gradient(45deg, 
+    var(--color1) 33%, 
+    var(--color2) 33% 66%, 
+    var(--color3) 66%);
+}
+
